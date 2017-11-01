@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Polyiamonds_Applet.exe" version="1.0.0.0" publicKeyToken="ed39c9a8713cdeaa" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Polyiamonds_Applet" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Polyiamonds_Applet.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Polyiamonds_Applet.exe" size="9176">
+      <assemblyIdentity name="Polyiamonds_Applet" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>K+ftRNGlt7UwbJjz3/W2hd0jb186gWdYBfJRNEkn7TY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Polyiamonds_Applet.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>6N7MliNbVJSIAIPrecIshMbZ7zEoKLr5SQvud4LDUOw=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-O6GQP0B\User" issuerKeyHash="754101cd06281ad55fb38d2752b5c50d6bc9e7c6" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>15pC0s49AlIV0/r9ZLnwrpp1nX3wpW+Z5pYiuNdZXhM=</DigestValue></Reference></SignedInfo><SignatureValue>EeN/U8xQEBwTAdAPJqgZ7vRmCRZmbIFPPyuuYYKopRyY+kPTEuYkP/w6fl/pPejFyM4n2BRNf2mlfKMK5d1nM63PgFDt5IiybyANKX4oqq63nku6A4sJa1kIerulJF4SFlOpKt8Raz5iwxQrIg5GJzwtnS8RNR9QlU5RJqGKyHY=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>y4jeXEzYyQhNFgHNqE4gbabT07qT1+bgCs4+Sag+cIYMaCXCyQ1rcCakLx65WdMRgeSPxkjvRj4v1ZTGlicVmgnj+TvkC0W5TlqZ82LNGXX0k392xnVaf0oJOxOxQJAYA6Qs2sfhcGQ/2m0qOCV3Ex/Rg/gcKuDyD4+eltgCWbU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="135e59d7b82296e6996fa5f07d9d759aaef0b964fdfad31552023dced2429ad7" Description="" Url=""><as:assemblyIdentity name="Polyiamonds_Applet.exe" version="1.0.0.0" publicKeyToken="ed39c9a8713cdeaa" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-O6GQP0B\User</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>lLve6C6lhXL6jAxMtJcgfsOljk2kYTAMOHpk6/NpA10=</DigestValue></Reference></SignedInfo><SignatureValue>XlZFHxy+kEZzm7Wuy78WMYJlwf7oAgGfuC2ueDlVppfYgB30jLhFoKthfijxRHMyoSJOzau3QVupEa4D8r6gpjoDhD6K6HpuPqJdc72rDpQy4rrmc5/DiTyVDfbXLUU+cUhbsbPVGUJSgrp0pkXSAwZIrHnxKWK+nw2DEAK87TQ=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>y4jeXEzYyQhNFgHNqE4gbabT07qT1+bgCs4+Sag+cIYMaCXCyQ1rcCakLx65WdMRgeSPxkjvRj4v1ZTGlicVmgnj+TvkC0W5TlqZ82LNGXX0k392xnVaf0oJOxOxQJAYA6Qs2sfhcGQ/2m0qOCV3Ex/Rg/gcKuDyD4+eltgCWbU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB6TCCAVKgAwIBAgIQZQLnEHTs3ZFNEo2jG5RaWjANBgkqhkiG9w0BAQsFADAzMTEwLwYDVQQDHigARABFAFMASwBUAE8AUAAtAE8ANgBHAFEAUAAwAEIAXABVAHMAZQByMB4XDTE3MTEwMTAyMTkzNloXDTE4MTEwMTA4MTkzNlowMzExMC8GA1UEAx4oAEQARQBTAEsAVABPAFAALQBPADYARwBRAFAAMABCAFwAVQBzAGUAcjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAy4jeXEzYyQhNFgHNqE4gbabT07qT1+bgCs4+Sag+cIYMaCXCyQ1rcCakLx65WdMRgeSPxkjvRj4v1ZTGlicVmgnj+TvkC0W5TlqZ82LNGXX0k392xnVaf0oJOxOxQJAYA6Qs2sfhcGQ/2m0qOCV3Ex/Rg/gcKuDyD4+eltgCWbUCAwEAATANBgkqhkiG9w0BAQsFAAOBgQC1TbM4MW+arfLZ7BXMfmFdB+QpLyamMxgxjy+7v/BnRE6geNZAXVYaGmEikH2anotXcz0ombGU5mTmz2Tv0oNGFixNIvsxim3mkNVy0s/LwpWbOb+TAG38kGxnULXu0UUHkLp3FSZD0MFihMz4buyo9Mj54Al3s1Cvw8+/T6I7EQ==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

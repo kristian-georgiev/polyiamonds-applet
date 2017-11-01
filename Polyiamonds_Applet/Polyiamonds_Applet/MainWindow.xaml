@@ -1,0 +1,183 @@
+﻿<Window x:Class="Polyiamonds_Applet.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Polyiamonds_Applet"
+        mc:Ignorable="d"
+   Title="Polyiamonds" Height="855.333" Width="1264.333"
+        WindowState ="Maximized">
+    <Grid x:Name="main">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="360"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Border Grid.Column="0" Grid.ColumnSpan="1" BorderThickness="2" Margin="10,10,10,10" BorderBrush="Gainsboro" Width="340" HorizontalAlignment="Left">
+            <StackPanel x:Name="Menu" HorizontalAlignment="Center" Width="320" >
+
+                <TextBlock x:Name="project_title" Margin="10,20,10,10" HorizontalAlignment="Center" TextAlignment="Center" TextWrapping="Wrap" FontSize="16" Text="Bijections between graphs and tilings with Walkup structure" Height="50" ></TextBlock>
+                <TextBlock x:Name="polyiamonds" FontSize="20" FontWeight="Bold" HorizontalAlignment="Left" Height="37" Margin="10,10,0,0" TextWrapping="Wrap" Text="Polyiamonds:" VerticalAlignment="Top" Width="173"/>
+                <Border BorderBrush="Gainsboro" BorderThickness="2" Height="200" Width="300">
+                    <Grid x:Name="polyiamond_tiles" Height="200" Width="300">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+
+
+
+                        <Button Tag ="1" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="1" Grid.RowSpan="1" Click="SelectShape" >
+                            <Button.Template>
+                                <ControlTemplate>
+                                    <Border BorderBrush="Gainsboro" BorderThickness="2">
+                                        <Image x:Name="tile_1" Source="/images/tile_1.png" />
+                                    </Border>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+                        <Button Tag="2" Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="1" Grid.RowSpan="1" Click="SelectShape">
+                            <Button.Template>
+                                <ControlTemplate>
+                                    <Border BorderBrush="Gainsboro" BorderThickness="2">
+                                        <Image x:Name="tile_2" Source="/images/tile_2.png"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+                        <Button Tag="3" Grid.Column="2" Grid.Row="0" Grid.ColumnSpan="1" Grid.RowSpan="1" Click="SelectShape">
+                            <Button.Template>
+                                <ControlTemplate>
+                                    <Border BorderBrush="Gainsboro" BorderThickness="2">
+                                        <Image x:Name="tile_3" Source="/images/tile_3.png"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+                        <Button Tag="4" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Click="SelectShape">
+                            <Button.Template>
+                                <ControlTemplate>
+                                    <Border BorderBrush="Gainsboro" BorderThickness="2">
+                                        <Image x:Name="tile_4" Source="/images/tile_4.png"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+                        <Button Tag="5" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Click="SelectShape">
+                            <Button.Template>
+                                <ControlTemplate>
+                                    <Border BorderBrush="Gainsboro" BorderThickness="2">
+                                        <Image x:Name="tile_5" Source="/images/tile_5.png"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+                        <Button Tag="6" Grid.Column="2" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Click="SelectShape">
+                            <Button.Template>
+                                <ControlTemplate>
+                                    <Border BorderBrush="Gainsboro" BorderThickness="2">
+                                        <Image x:Name="tile_6" Source="/images/tile_6.png"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+                    </Grid>
+                </Border>
+
+                <Border BorderBrush="Gainsboro" BorderThickness="2" Height="200" Width="300" Margin="0,20,0,0">
+                    <Grid x:Name="lines_and_dots" Height="200" Width="300">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+
+                        <Button Tag ="7" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="1" Grid.RowSpan="1" Click="SelectShape" >
+                            <Button.Template>
+                                <ControlTemplate>
+                                    <Border BorderBrush="Gainsboro" BorderThickness="2">
+                                        <Image x:Name="line_1" Source="/images/line_1_logo.png" />
+                                    </Border>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+                        <Button Tag="8" Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="1" Grid.RowSpan="1" Click="SelectShape">
+                            <Button.Template>
+                                <ControlTemplate>
+                                    <Border BorderBrush="Gainsboro" BorderThickness="2">
+                                        <Image x:Name="line_2" Source="/images/line_2_logo.png"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+                        <Button Tag="9" Grid.Column="2" Grid.Row="0" Grid.ColumnSpan="1" Grid.RowSpan="1" Click="SelectShape">
+                            <Button.Template>
+                                <ControlTemplate>
+                                    <Border BorderBrush="Gainsboro" BorderThickness="2">
+                                        <Image x:Name="line_3" Source="/images/line_3_logo.png"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+                        <Button Tag="10" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Click="SelectShape">
+                            <Button.Template>
+                                <ControlTemplate>
+                                    <Border BorderBrush="Gainsboro" BorderThickness="2">
+                                        <Image x:Name="dot_white" Source="/images/dot_white_logo.png"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+                        <Button Tag="11" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Click="SelectShape">
+                            <Button.Template>
+                                <ControlTemplate>
+                                    <Border BorderBrush="Gainsboro" BorderThickness="2">
+                                        <Image x:Name="dot_black" Source="/images/dot_black_logo.png"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+                        <Button Tag="empty" Grid.Column="2" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1">
+                            <Button.Template>
+                                <ControlTemplate>
+                                    <Border BorderBrush="Gainsboro" BorderThickness="2">
+                                        <Image x:Name="grey" Source="/images/grey.png"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+                    </Grid>
+                </Border>
+
+                <Grid x:Name="buttons" Margin="0,0,0,0">
+                    <!--
+                    <TextBlock Text="Zoom in/out:" HorizontalAlignment="Center" Height="20" VerticalAlignment="Top" Margin="0,10,0,0"/>
+                    Slider x:Name="zoom_in_out" Width="250" Height="20" Margin="0,30,0,0" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+                    -->
+                    <Button x:Name="undo" Width="90" Height=" 30" HorizontalAlignment="Center" Margin="10,20,10,10" Content="Remove last tile" Click="CanvasUndo" />
+                    <Button x:Name="reset" Width="90" Height=" 30" HorizontalAlignment="Right" Margin="10,20,10,10" Content="Clear board" Click="CanvasReset"  />
+                    <Button x:Name="print" Width="90" Height="30" HorizontalAlignment="Left" Margin="10,20,10,10" Content="Print to PDF" Click="CanvasPrint"/>
+                </Grid>
+            </StackPanel>
+        </Border>
+
+
+
+        <Border Grid.Column="1" BorderBrush="Gainsboro" BorderThickness="2" Margin="10,10,10,10" Height="800" Width="800">
+            <UserControl>
+                <Canvas x:Name="drawingBoard" Background="Transparent"  MouseLeftButtonDown="MouseClickOnCanvas">
+                </Canvas>
+            </UserControl>
+        </Border>
+
+    </Grid>
+
+</Window>
